@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Suggestion Box</title>
+    <style>
+      .suggestion-box {
+        position: relative;
+        display: none;
+        border: 1px solid #ccc;
+        border-top: none;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+      .suggestion-item {
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      .suggestion-item:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="search-input" placeholder="Type here..." />
+    <div class="suggestion-box" id="suggestion-box"></div>
+
+    <div class="threadInfo-box" id="threadInfo-box"></div>
+    <a
+      href="https://www.embroiderysystems.com/cart/add?id=33376303186058&quantity=5"
+      >Manually update cart</a
+    >
+
+    <!--
+
+<input
+      value="ADD TO CART"
+      id="add-to-cart-button"
+      type="button"
+      onclick="addItemToCart(33376303186058, 1, {{product.selling_plan_groups[0].selling_plans[0].id}})"
+    />
+
+
+    -->
+
+    //
+    <script src="./threadApp.js"></script>
+ 
+  </body>
+</html>
